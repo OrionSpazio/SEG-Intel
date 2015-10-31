@@ -1,0 +1,33 @@
+<!Doctype html>
+<html>
+<head>
+<script language="JavaScript" type="text/javascript">
+<!--- PASSWORD PROTECTION SCRIPT
+
+function TheLogin() {
+
+var password = 'pepper';
+
+if (this.document.login.pass.value == password) {
+  top.location.href="file:///C:/Users/OrionSpazio/Documents/GitHub/SEG-Intel/Orion/Chat_Web/Index_ChatWeb.html";
+}
+else {
+  location.href="incorrect.html";
+  }
+}
+
+// End hiding --->
+</script>
+
+</head>
+<body>
+<center>
+Enter your password:<br>
+<form name="login" style="margin: 0px">
+<INPUT TYPE="text" NAME="pass" size="17" onKeyDown="if(event.keyCode==13) event.keyCode=9;" style="width: 152px; margin: 5px;"><br>
+<input type="button" value="Click to Login" style="width : 150px; margin: 3px" onClick="TheLogin(this.form)">
+</form>
+</center>
+
+</body>
+</html>
