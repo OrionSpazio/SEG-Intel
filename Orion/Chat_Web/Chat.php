@@ -6,6 +6,7 @@ $servername = "us-cdbr-azure-northcentral-a.cleardb.com";
 $username = "baf69364474490";
 $password = "e8c2966f";
 $dbname = "seg-intel";
+$text = $_POST["text"];
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -15,7 +16,7 @@ if ($conn->connect_error) {
 } 
 
 $sql = "INSERT INTO communications (idcommunications)
-VALUES ($_POST["text"])";
+VALUES ($text)";
 
 if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
