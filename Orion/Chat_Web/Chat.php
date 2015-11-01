@@ -1,13 +1,29 @@
+<!Doctype html>
 <html>
 <body>
 <?php
-$myfile = fopen("Testfile.txt",a) or die("NOOOOO");
-$txt = "John Doe\n";
-fwrite($myfile, $txt);
-$txt = "Jane Doe\n";
-fwrite($myfile, $txt);
-fclose($myfile);
+$servername = "us-cdbr-azure-northcentral-a.cleardb.com";
+$username = "baf69364474490";
+$password = "e8c2966f";
+$dbname = "seg-intel";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+
+$sql = "INSERT INTO communications (idcommunications)
+VALUES ('testing')";
+
+if ($conn->query($sql) === TRUE) {
+    echo "New record created successfully";
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+$conn->close();
 ?>
-<li><a href="Index_ChatWeb.html"></a></li>
 </body>
 </html>
