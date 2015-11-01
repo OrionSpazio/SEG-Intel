@@ -15,7 +15,7 @@ if ($conn->connect_error) {
 } 
 
 $sql = "INSERT INTO communications (idcommunications)
-VALUES ('testing')";
+VALUES ($_POST["text"])";
 
 if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
