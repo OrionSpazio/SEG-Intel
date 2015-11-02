@@ -2,6 +2,7 @@
 <html>
 <body>
 <?php
+include('Index_ChatWeb.html')
 $servername = "us-cdbr-azure-northcentral-a.cleardb.com";
 $username = "baf69364474490";
 $password = "e8c2966f";
@@ -25,7 +26,6 @@ if ($conn->query($sql) === TRUE) {
 }
 
 $conn->close();
-include('Index_ChatWeb.html')
 ?>
 </body>
 </html>
