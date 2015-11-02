@@ -73,7 +73,7 @@ $conn->close();
 <textarea type="text" name="text" wrap="soft" rows="10" cols="125" >
 </textarea>
 <br>
-<input type="text" name="name">
+Nom:<input type="text" name="name">
 <input type="submit">
 </form>
 </body>
