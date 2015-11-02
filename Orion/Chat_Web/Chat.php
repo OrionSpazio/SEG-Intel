@@ -6,7 +6,7 @@ $servername = "us-cdbr-azure-northcentral-a.cleardb.com";
 $username = "baf69364474490";
 $password = "e8c2966f";
 $dbname = "seg-intel";
-$text = $_POST["text"];
+$text = "Gabriel"+"<br>"+$_POST["text"]+"<br>"+"<br>";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
