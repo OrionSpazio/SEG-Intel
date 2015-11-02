@@ -62,7 +62,7 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo "id: " . $row["idcommunications"]. "<br>";
+        echo $row["idcommunications"]. "<br>";
     }
 } else {
     echo "0 results";
@@ -73,6 +73,8 @@ $conn->close();
 <textarea type="text" name="text" wrap="soft" rows="10" cols="125" >
 </textarea>
 <br>
+Username: <input type="text" name="name">
+Password: <input type="text" name="password">
 <input type="submit">
 </form>
 </body>
