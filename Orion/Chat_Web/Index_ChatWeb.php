@@ -43,6 +43,8 @@
 </nav>
 <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
 <script src="js/bootstrap.js" type="text/javascript"></script>
+<center>
+<textarea cols="100" rows="15">
 <?php
 $servername = "us-cdbr-azure-northcentral-a.cleardb.com";
 $username = "baf69364474490";
@@ -69,13 +71,15 @@ if ($result->num_rows > 0) {
 }
 $conn->close();
 ?>
+</textarea>
 <form action="Chat.php" method="post">
-<textarea type="text" name="text" wrap="soft" rows="10" cols="125" >
+<textarea type="text" name="text" wrap="soft" rows="10" cols="100" >
 </textarea>
 <br>
-Nom:<input type="text" name="name">
-Password:<input type="text" name="password">
+Nom:<input type="text" name="name" size="15"><br>
+Password:<input type="text" name="password"><br>
 <input type="submit">
+</center>
 </form>
 </body>
 </html>
