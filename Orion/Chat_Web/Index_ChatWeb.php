@@ -44,7 +44,7 @@
 <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
 <script src="js/bootstrap.js" type="text/javascript"></script>
 <center>
-<textarea cols="100" rows="15">
+<textarea cols="100" rows="15" readonly>
 <?php
 $servername = "us-cdbr-azure-northcentral-a.cleardb.com";
 $username = "baf69364474490";
@@ -71,6 +71,13 @@ if ($result->num_rows > 0) {
 }
 $conn->close();
 ?>
+<script language="javascript">
+var textarea = document.getElementById('textarea_id');
+setInterval(function(){
+    textarea.value += Math.random()+'\n';
+    textarea.scrollTop = textarea.scrollHeight;
+}, 1000);
+</script>
 </textarea>
 <form action="Chat.php" method="post">
 <textarea type="text" name="text" wrap="soft" rows="10" cols="100" >
