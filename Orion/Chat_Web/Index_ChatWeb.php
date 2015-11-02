@@ -73,8 +73,6 @@ $conn->close();
 <textarea type="text" name="text" wrap="soft" rows="10" cols="125" >
 </textarea>
 <br>
-Username: <input type="text" name="name">
-Password: <input type="text" name="password">
 <input type="submit">
 </form>
 </body>
