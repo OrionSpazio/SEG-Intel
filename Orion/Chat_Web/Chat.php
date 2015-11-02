@@ -7,7 +7,7 @@ $username = "baf69364474490";
 $password = "e8c2966f";
 $dbname = "seg-intel";
 $array = array("Gabriel","<br>",$_POST["text"],"<br>","<br>");
-$text = implode("<br>",$array)
+$text = implode("<br>",$array);
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
