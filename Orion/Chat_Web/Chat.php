@@ -7,7 +7,7 @@ $servername = "us-cdbr-azure-northcentral-a.cleardb.com";
 $username = "baf69364474490";
 $password = "e8c2966f";
 $dbname = "seg-intel";
-$array = array($_POST["name"],":","&#13;&#10;","     ",$_POST["text"],"&#13;&#10;");
+$array = array($_POST["name"],":","&#13;&#10;","     ",$_POST["text"]);
 $text = implode("",$array);
 
 // Create connection
