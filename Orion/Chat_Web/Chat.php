@@ -2,7 +2,6 @@
 <html>
 <body>
 <?php
-include ('Index_ChatWeb.php');
 $servername = "us-cdbr-azure-northcentral-a.cleardb.com";
 $username = "baf69364474490";
 $password = "e8c2966f";
@@ -26,7 +25,7 @@ if ($conn->query($sql) === TRUE) {
 }
 
 $conn->close();
-include('Index_ChatWeb.html')
+header("Location: http://seg-intel.azurewebsites.net/Orion/Chat_Web/Index_ChatWeb.php");
 ?>
 </body>
 </html>
