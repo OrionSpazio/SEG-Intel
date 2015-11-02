@@ -3,7 +3,7 @@
 <body>
 <?php
 include('Index_ChatWeb.html')
-if ($_POST["password"]=="good"){
+if ("good"=="good"){
 $servername = "us-cdbr-azure-northcentral-a.cleardb.com";
 $username = "baf69364474490";
 $password = "e8c2966f";
