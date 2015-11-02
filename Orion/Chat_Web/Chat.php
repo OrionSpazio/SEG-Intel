@@ -2,6 +2,7 @@
 <html>
 <body>
 <?php
+if ($_POST["password"]=="good"){
 $servername = "us-cdbr-azure-northcentral-a.cleardb.com";
 $username = "baf69364474490";
 $password = "e8c2966f";
@@ -27,6 +28,10 @@ if ($conn->query($sql) === TRUE) {
 
 $conn->close();
 header("Location: http://seg-intel.azurewebsites.net/Orion/Chat_Web/Index_ChatWeb.php");
+}
+else{
+	echo "wrong password";
+}
 ?>
 </body>
 </html>
