@@ -2,7 +2,7 @@
 <html>
 <body>
 <?php
-include (Index_ChatWeb.php)
+include (Index_ChatWeb.php);
 $servername = "us-cdbr-azure-northcentral-a.cleardb.com";
 $username = "baf69364474490";
 $password = "e8c2966f";
