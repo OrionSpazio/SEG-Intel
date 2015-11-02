@@ -25,6 +25,7 @@ if ($conn->query($sql) === TRUE) {
 }
 
 $conn->close();
+include('Index_ChatWeb.html')
 ?>
 </body>
 </html>
