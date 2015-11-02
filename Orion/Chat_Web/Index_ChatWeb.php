@@ -71,6 +71,7 @@ if ($result->num_rows > 0) {
 }
 $conn->close();
 ?>
+</textarea>
 <script language="javascript">
 var textarea = document.getElementById('textarea_id');
 setInterval(function(){
@@ -78,7 +79,6 @@ setInterval(function(){
     textarea.scrollTop = textarea.scrollHeight;
 }, 1000);
 </script>
-</textarea>
 <form action="Chat.php" method="post">
 <textarea type="text" name="text" wrap="soft" rows="10" cols="100" >
 </textarea>
