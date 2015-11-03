@@ -9,6 +9,8 @@ $password = "e8c2966f";
 $dbname = "seg-intel";
 $array = array($_POST["name"],":","&#13;&#10;","     ",$_POST["text"],"&#13;&#10;");
 $text = implode("",$array);
+$arrayMail = array($_POST["name"],":","\n","     ",$_POST["text"],"\n");
+$textMail = implode("",$arrayMail);
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -27,6 +29,8 @@ if ($conn->query($sql) === TRUE) {
 }
 
 $conn->close();
+$message = wordwrap($textMail);
+mail("orionspazio@gmail.com","New chat message on Seg-Intel",$textMail);
 header("Location: http://seg-intel.azurewebsites.net/Orion/Chat_Web/Index_ChatWeb.php");
 }
 else{
