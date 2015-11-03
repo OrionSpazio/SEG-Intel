@@ -30,7 +30,7 @@ if ($conn->query($sql) === TRUE) {
 
 $conn->close();
 $message = wordwrap($textMail);
-mail("orionspazio@gmail.com","New chat message on Seg-Intel",$textMail);
+//mail("orionspazio@gmail.com","New chat message on Seg-Intel",$textMail);
 header("Location: http://seg-intel.azurewebsites.net/Orion/Chat_Web/Index_ChatWeb.php");
 }
 else{
