@@ -33,7 +33,6 @@
             <li><a href="../Index_Orion.html">Gabriel</a></li>
           </ul>
           <li><a href="Index_ChatWeb.html">Chat Web</a></li>
-          <li><a href="ChatRead.php">Chat test</a></li>
         </li>
       </ul>
     </div>
@@ -72,13 +71,7 @@ if ($result->num_rows > 0) {
 $conn->close();
 ?>
 </textarea>
-<script language="javascript">
-var textarea = document.getElementById('textarea_id');
-setInterval(function(){
-    textarea.value += Math.random()+'\n';
-    textarea.scrollTop = textarea.scrollHeight;
-}, 1000);
-</script>
+
 <form action="Chat.php" method="post">
 <textarea type="text" name="text" wrap="soft" rows="10" cols="100" >
 </textarea>
