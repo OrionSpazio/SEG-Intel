@@ -55,7 +55,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
-} 
+}
 
 $sql = "SELECT idcommunications FROM communications";
 $result = $conn->query($sql);
@@ -77,7 +77,7 @@ $conn->close();
 </textarea>
 <br>
 Nom:<input type="text" name="name" size="15"><br>
-Password:<input type="text" name="password"><br>
+Password:<input type="password" name="password"><br>
 <input type="submit">
 </center>
 </form>
